@@ -2,8 +2,13 @@
   "name": "typescriptmoduletemplate",
   "version": "1.0.0",
   "description": "A template for a Typescript based module.",
-  "main": "bin/index.js",
-  "typings": "src/index.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/EpicOfChaos/TypescriptModuleTemplate"
+  },
+  "license": "BSD-2-Clause",
   "scripts": {
     "build": "npm run clean && tsc -p tsconfig.json",
     "clean": "rimraf dist/**",
