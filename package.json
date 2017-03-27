@@ -1,0 +1,32 @@
+{
+  "name": "typescriptmoduletemplate",
+  "version": "1.0.0",
+  "description": "A template for a Typescript based module.",
+  "main": "bin/index.js",
+  "typings": "src/index.ts",
+  "scripts": {
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "clean": "rimraf dist/**",
+    "tsc": "tsc -p tsconfig.json",
+    "tscw": "tsc --watch -p tsconfig.json",
+    "test": "mocha --reporter min --inline-diffs dist/**/*.spec.js",
+    "test-watch": "npm run test -- -w"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/chai": "^3.4.35",
+    "@types/chai-as-promised": "0.0.30",
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.0.11",
+    "@types/sinon": "^1.16.36",
+    "@types/sinon-chai": "^2.7.27",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.2.0",
+    "rimraf": "^2.6.1",
+    "sinon": "^2.1.0",
+    "sinon-chai": "^2.9.0",
+    "typescript": "^2.2.1"
+  }
+}
